@@ -1,0 +1,115 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="domain.dto">
+    <class name="Users" table="users">
+        
+        <id name="id" column="USER_ID">
+            <generator class="increment"/>
+        </id>
+        <property name="username"/>
+        <property name="password"/>
+        <property name="name" />
+        <property name="email"/>
+        <property name="address"/>
+        <property name="telephone"/>
+        
+        
+    </class>
+    <class name="RouteDto" table="route">
+        
+        <id name="route" column="route">
+         <generator class="increment"/>
+        </id>
+        <property name="routetracking"/>
+        <property name="trndate"/>
+        <property name="storage"/>
+        <property name="truck" />
+        <property name="latitude"/>
+        <property name="longtitude"/>
+         <property name="State"/>
+   </class>
+
+
+    <class name="RouteLinesDto" table="routelines">
+        
+        <id name="routelines" column="routelines">
+          <generator class="increment"/>
+        </id>
+        <property name="routetracking"/>
+        <property name="storage"/>
+        <property name="product" />
+        <property name="qty"/>
+        <property name="price"/>
+        <property name="value"/>
+
+    </class>
+  
+    
+    <class name="ProductsDto" table="product">
+        
+        <id name="product" column="product">
+            <generator class="increment"/>
+        </id>
+        <property name="code"/>
+        <property name="name"/>
+        <property name="weight"/>
+        <property name="volume" />
+        <property name="price"/>
+        
+        
+        
+    </class>
+    
+    
+     <class name="StorageDto" table="storage">
+        
+        <id name="storage" column="storage">
+            <generator class="increment"/>
+        </id>
+        
+        <property name="name"/>
+        <property name="weight"/>
+        <property name="volume" />
+        
+        
+        
+    </class>
+    
+    
+    <class name="TruckDto" table="truck">
+        
+        <id name="Truck" column="truck">
+            <generator class="increment"/>
+        </id>
+        
+        <property name="Name"/>
+        <property name="Varchar01"/>
+        <property name="Varchar02"/>
+        <property name="Weight"/>
+        <property name="Volume"/>
+        
+        
+    </class>
+
+      <class name="TrackingLinesDto" table="trackinglines">
+        <id name="TrackingLines" column="trackinglines">
+            <generator class="increment"/>
+        </id>
+        <property name="routetracking"/>
+        <property name="storage"/>
+        <property name="truck"/>
+        
+        
+    </class> 
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</hibernate-mapping>
+

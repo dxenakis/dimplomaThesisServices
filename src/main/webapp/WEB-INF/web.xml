@@ -1,0 +1,120 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+  <display-name>Archetype Created Web Application</display-name>
+  <servlet>
+  	<servlet-name>Login</servlet-name>
+  	<display-name>Login</display-name>
+  	<description></description>
+  	<servlet-class>domain.services.Login</servlet-class>
+  </servlet>
+  
+   <servlet>
+  	<servlet-name>UserLogin</servlet-name>
+  	<display-name>UserLogin</display-name>
+  	<description></description>
+  	<servlet-class>domain.services.UserLogin</servlet-class>
+  </servlet>
+  
+  <servlet>
+  	<servlet-name>Route</servlet-name>
+  	<display-name>Route</display-name>
+  	<description></description>
+  	<servlet-class>domain.services.Route</servlet-class>
+  </servlet>
+  
+  <servlet>
+  	<servlet-name>RouteAll</servlet-name>
+  	<display-name>RouteAll</display-name>
+  	<description></description>
+  	<servlet-class>domain.services.RouteAll</servlet-class>
+  </servlet>
+  
+  <servlet>
+  	<servlet-name>TrackingInfo</servlet-name>
+  	<display-name>TrackingInfo</display-name>
+  	<description></description>
+  	<servlet-class>domain.services.TrackingInfo</servlet-class>
+  </servlet>
+  
+  <servlet>
+  	<servlet-name>Products</servlet-name>
+  	<display-name>Products</display-name>
+  	<description></description>
+  	<servlet-class>domain.services.Products</servlet-class>
+  </servlet>
+  
+  <servlet>
+  	<servlet-name>Storage</servlet-name>
+  	<display-name>Storage</display-name>
+  	<description></description>
+  	<servlet-class>domain.services.Storage</servlet-class>
+  </servlet>
+  
+  <servlet>
+  	<servlet-name>Truck</servlet-name>
+  	<display-name>Truck</display-name>
+  	<description></description>
+  	<servlet-class>domain.services.Truck</servlet-class>
+  </servlet>
+  
+  <servlet>
+  	<servlet-name>InsertRoute</servlet-name>
+  	<display-name>InsertRoute</display-name>
+  	<description></description>
+  	<servlet-class>domain.services.InsertRoute</servlet-class>
+  </servlet>
+  
+  
+  
+  <servlet-mapping>
+  	<servlet-name>Login</servlet-name>
+  	<url-pattern>/Login</url-pattern>
+  </servlet-mapping>
+
+ <servlet-mapping>
+  	<servlet-name>UserLogin</servlet-name>
+  	<url-pattern>/UserLogin</url-pattern>
+  </servlet-mapping>
+
+ <servlet-mapping>
+  	<servlet-name>Route</servlet-name>
+  	<url-pattern>/Route</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+  	<servlet-name>RouteAll</servlet-name>
+  	<url-pattern>/RouteAll</url-pattern>
+  </servlet-mapping>
+
+<servlet-mapping>
+  	<servlet-name>Products</servlet-name>
+  	<url-pattern>/Products</url-pattern>
+  </servlet-mapping>
+
+
+<servlet-mapping>
+  	<servlet-name>Storage</servlet-name>
+  	<url-pattern>/Storage</url-pattern>
+  </servlet-mapping>
+
+<servlet-mapping>
+  	<servlet-name>Truck</servlet-name>
+  	<url-pattern>/Truck</url-pattern>
+  </servlet-mapping>
+
+<servlet-mapping>
+  	<servlet-name>InsertRoute</servlet-name>
+  	<url-pattern>/InsertRoute</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+  	<servlet-name>TrackingInfo</servlet-name>
+  	<url-pattern>/TrackingInfo</url-pattern>
+  </servlet-mapping>
+
+
+
+</web-app>
